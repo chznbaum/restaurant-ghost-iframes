@@ -1,4 +1,5 @@
 @import "fonts.css";
+@import "ghost.css";
 @import "vars.css";
 
 /* Disable scrolling inside iframe */
@@ -64,11 +65,11 @@ body, html {
   display: block !important;
 }
 
-h2, h4, h2 > *, h4 > * {
+h2, h4 {
   font-family: var(--font-serif);
   font-weight: 500;
 }
 
-h2, h2 > * {
+h2 {
   font-size: var(--step-0);
 }
