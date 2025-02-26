@@ -4,11 +4,8 @@
 /* Disable scrolling inside iframe */
 body, html {
   overflow: hidden;
-}
-
-body {
   font-size: var(--step--1);
-  font-family: var(--font-serif);
+  font-family: var(--font-serif)!important;
   font-weight: 300;
 }
 
