@@ -1,4 +1,7 @@
 @import "fonts.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import "vars.css";
 
 /* Disable scrolling inside iframe */
