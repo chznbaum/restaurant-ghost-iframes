@@ -1,0 +1,59 @@
+/* Variables
+/* ---------------------------------------------------------- */
+
+:host {
+  /* Reset all CSS properties */
+  all: initial !important;
+}
+
+:root {
+
+  /* Colours */
+  --color-primary: var(--ghost-accent-color, #3eb0ef);
+  --color-base: #131313;
+  --color-border: #ddd;
+  --color-bg: #f5f5f5;
+  --color-success: #80b912;
+  --color-error: #f05230;
+
+  /* Fonts */
+  --font-sans-serif: 'Atkinson Hyperlegible Next', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --font-serif: 'Kalnia', Georgia, Times, serif;
+  --font-mono: 'Atkinson Hyperlegible Mono', Menlo, Courier, monospace;
+  --font-light: 100;
+  --font-normal: 400;
+  --font-bold: 700;
+  --font-heavy: 800;
+
+  /* Breakpoints */
+  --xlarge: 1680px;
+  --large: 1280px;
+  --medium: 980px;
+  --small: 740px;
+  --xsmall: 480px;
+
+  /* Sizes */
+  --height: 4rem;
+  --margin: 2rem;
+  --radius: 0.5rem;
+
+  /* Fluid Typography Steps 
+  @link https://utopia.fyi/type/calculator?c=320,19,1.333,1350,28,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+  /* Step -2: 10.6928px → 15.7579px */
+  --step--2: clamp(0.6683rem, 0.57rem + 0.4918vw, 0.9849rem);
+  /* Step -1: 14.2536px → 21.0053px */
+  --step--1: clamp(0.8908rem, 0.7597rem + 0.6555vw, 1.3128rem);
+  /* Step 0: 19px → 28px */
+  --step-0: clamp(1.1875rem, 1.0127rem + 0.8738vw, 1.75rem);
+  /* Step 1: 25.327px → 37.324px */
+  --step-1: clamp(1.5829rem, 1.35rem + 1.1648vw, 2.3328rem);
+  /* Step 2: 33.7609px → 49.7529px */
+  --step-2: clamp(2.1101rem, 1.7995rem + 1.5526vw, 3.1096rem);
+  /* Step 3: 45.0033px → 66.3206px */
+  --step-3: clamp(2.8127rem, 2.3988rem + 2.0696vw, 4.145rem);
+  /* Step 4: 59.9894px → 88.4054px */
+  --step-4: clamp(3.7493rem, 3.1976rem + 2.7588vw, 5.5253rem);
+  /* Step 5: 79.9658px → 117.8444px */
+  --step-5: clamp(4.9979rem, 4.2624rem + 3.6775vw, 7.3653rem);
+}
